@@ -1,0 +1,84 @@
+
+/* CABECERA */
+
+.cabecera{
+    margin: 1rem 0 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_search{
+    display: flex;
+    align-items: end;
+    gap: .9375rem;
+    margin-left: 8rem;
+}
+
+.logo__img{
+    width: 10rem;
+}
+
+.busqueda{
+    width: 20rem;
+    height: 2rem;
+}
+
+.btn__login{
+    padding: 10px 50px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    background-color: rgb(226, 164, 164);
+    font-weight: 600;
+    border-radius: .3125rem;
+    margin-right: 5rem;
+}
+
+/* carrusel */
+
+.carrusel-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carrusel{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide{
+    flex: 0 0 100%;
+    z-index: 0;
+}
+
+.banner__img{
+    width: 100vw;
+    height: 25rem;
+}
+
+.text__banner{
+    position: absolute;
+    bottom: 30%;
+    width: 30%;
+    color: white;
+    border-color: #000000;
+    font-size: 2.5rem;
+    margin-left: 3rem;
+}
+
+.botones_carrusel{
+    position: absolute;
+    align-self: center;
+    bottom: 0;
+    margin-bottom: 1rem;
+}
+
+.btn_carrusel{
+    width: .5rem;
+    height: .5rem;
+    border: 1px solid white;
+    border-radius: 5px;
+}
