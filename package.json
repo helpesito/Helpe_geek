@@ -1,0 +1,22 @@
+{
+  "name": "admin",
+  "version": "1.0.0",
+  "description": "ecommerce",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "helpe"
+  ],
+  "author": "si",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "uuid": "^9.0.0"
+  }
+}
