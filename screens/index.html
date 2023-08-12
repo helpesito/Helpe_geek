@@ -30,26 +30,26 @@
         <section class="carruseles">
             <!-- banner -->
             <div class="carrusel-container">
-                <div class="carrusel">
-                    <div class="slide">
+                <div class="carrusel" data-carrusel>
+                    <div class="slide" data-slide>
                         <img src="/assets/img/banner-image.png" alt="banner" class="banner__img">
                         <p class="text__banner">20% Descuento Productos Nintendo.</p>
                     </div>
-                    <div class="slide">
+                    <div class="slide" data-slide>
                         <img src="/assets/img/banner_star-wars.jpg" alt="banner" class="banner__img">
                         <p class="text__banner">Nuevos Productos Star Wars</p>
                     </div>
-                    <div class="slide">
+                    <div class="slide" data-slide>
                         <img src="/assets/img/banner_xbox.png" alt="banner" class="banner__img">
                         <p class="text__banner">30% Descuento productos xbox</p>
                     </div>
                 </div>
             <div class="botones_carrusel">
-                <button class="prev-btn btn_carrusel"></button>
-                <button class="next-btn btn_carrusel"></button>
+                <button class="btn_carrusel" data-next-btn></button>
+                <button class="btn_carrusel" data-back-btn></button>
             </div>
             </div>
         </section>
-        <script src="/controllers/carrusel_banner.js" ></script>
+        <script src="../controllers/carrusel_banner.js"></script>
 </body>
 </html>

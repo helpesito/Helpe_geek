@@ -1,34 +1,28 @@
-const carrusel = document.querySelector('.carrusel');
-const slides = document.querySelectorAll('.slide');
+const carrusel = document.querySelector('[data-carrusel]');
+const slide = document.querySelectorAll('[data-slide]');
 let currentIndex = 0;
 
-function showSlide(index) {
+const showSlide = (index) => {
   carrusel.style.transform = `translateX(-${index * 100}%)`;
 }
 
-function nextSlide() {
-  currentIndex = (currentIndex + 1) % slides.length;
-  showSlide(currentIndex);
+const nextSlide = () => {
+    currentIndex = (currentIndex + 1) % slide.length;
+    showSlide(currentIndex);
 }
 
-function prevSlide() {
-  currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-  showSlide(currentIndex);
+const prevSlide = () => {
+    currentIndex = (currentIndex - 1 + slide.length) % slide.length;
+    showSlide(currentIndex);
 }
 
-// Agrega eventos para los botones de siguiente y anterior
-document.querySelector('.next-btn').addEventListener('click', nextSlide);
-document.querySelector('.prev-btn').addEventListener('click', prevSlide);
+document.querySelector('[data-back-btn]').addEventListener('click', nextSlide);
+document.querySelector('[data-next-btn]').addEventListener('click', prevSlide);
 
-// Agrega el intervalo para el movimiento automático
-const interval = setInterval(nextSlide, 8000); // Cambia de slide cada 3 segundos
+let interval = setInterval(nextSlide, 8000);
 
-// Pausa el intervalo cuando el mouse entra al carrusel
-carousel.addEventListener('mouseenter', () => clearInterval(interval));
+carrusel.addEventListener('mouseenter', () => clearInterval(interval));
 
-// Reanuda el intervalo cuando el mouse sale del carrusel
-carousel.addEventListener('mouseleave', () => interval = setInterval(nextSlide, 3000));
+carrusel.addEventListener('mouseleave', () => interval = setInterval(nextSlide, 8000));
 
-
-// Inicia el carrusel mostrando el primer slide
 showSlide(currentIndex);
