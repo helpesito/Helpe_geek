@@ -57,31 +57,31 @@
         <section class="productos">
             <p>Star Wars</p>
             <div class="producto"> 
-                <img src="/assets/img/star-wars.png" alt="" class="producto__imagen">
+                <img src="/assets/img/rei.png" alt="" class="producto__imagen">
+                <h2 class="producto__titulo">Producto x</h2>
+                <p>$ 20.00 </p>
+                <button class="producto__btn-cart">ver producto</button>
+            </div>
+            <div class="producto">
+                <img src="/assets/img/75192_alt3.jpg" alt="" class="producto__imagen">
                 <h2 class="producto__titulo">Producto x</h2>
                 <p>$ 20.00 </p>
                 <button class="producto__btn-cart">ver producto</button>
             </div>
             <div class="producto"> 
-                <img src="/assets/img/star-wars.png" alt="" class="producto__imagen">
+                <img src="/assets/img/mug-starwars.png" alt="" class="producto__imagen">
                 <h2 class="producto__titulo">Producto x</h2>
                 <p>$ 20.00 </p>
                 <button class="producto__btn-cart">ver producto</button>
             </div>
             <div class="producto"> 
-                <img src="/assets/img/star-wars.png" alt="" class="producto__imagen">
+                <img src="/assets/img/dark-vader.png" alt="" class="producto__imagen">
                 <h2 class="producto__titulo">Producto x</h2>
                 <p>$ 20.00 </p>
                 <button class="producto__btn-cart">ver producto</button>
             </div>
             <div class="producto"> 
-                <img src="/assets/img/star-wars.png" alt="" class="producto__imagen">
-                <h2 class="producto__titulo">Producto x</h2>
-                <p>$ 20.00 </p>
-                <button class="producto__btn-cart">ver producto</button>
-            </div>
-            <div class="producto"> 
-                <img src="/assets/img/star-wars.png" alt="" class="producto__imagen">
+                <img src="/assets/img/camisa-starwars.png" alt="" class="producto__imagen">
                 <h2 class="producto__titulo">Producto x</h2>
                 <p>$ 20.00 </p>
                 <button class="producto__btn-cart">ver producto</button>
@@ -122,6 +122,7 @@
         </section>
         <section class="productos">
             <p>friki</p>
+            
             <div class="producto"> 
                 <img src="/assets/img/star-wars.png" alt="" class="producto__imagen">
                 <h2 class="producto__titulo">Producto x</h2>
@@ -155,32 +156,36 @@
         </section>
 
         <footer>
-            <img src="/assets/img/elpe_Geek_adobe_express.svg" alt="logo" class="logo__img">
-            <div>
-                <ul class="footer__information">
-                    <li><a href="#">quienes somos</a></li>
-                    <li><a href="#"> politica de privacidad</a></li>
-                    <li><a href="#">programa de fidelidad</a></li>
-                    <li><a href="#">nuestra tienda</a></li>
-                    <li><a href="#">quiero ser franquiciado</a></li>
-                    <li><a href="#">anuncie aqui</a></li>
-                </ul>
+            <div class="contacto">
+                <img src="/assets/img/elpe_Geek_adobe_express.svg" alt="logo" class="logo__img">
+                <div>
+                    <ul class="footer__information">
+                        <li><a href="#">quienes somos</a></li>
+                        <li><a href="#"> politica de privacidad</a></li>
+                        <li><a href="#">programa de fidelidad</a></li>
+                        <li><a href="#">nuestra tienda</a></li>
+                        <li><a href="#">quiero ser franquiciado</a></li>
+                        <li><a href="#">anuncie aqui</a></li>
+                    </ul>
+                </div>
+                <div class="formulario">
+                    <h2>Hable con nosotros</h2>
+                    <form class="formulario__contacto">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                        
+                        <button type="submit" class="contacto__btn">Enviar Mensaje</button>
+                    </form>
+                </div>
             </div>
-            <div class="formulario">
-                <h2>Hable con nosotros</h2>
-                <form class="formulario__contacto">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                    
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                    
-                    <button type="submit">Enviar Mensaje</button>
-                </form>
-            </div>
+            <p class="text__footer">Desarrolado por Heibert Cordoba©</p>
         </footer>
+        
 </body>
 </html>
