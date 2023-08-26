@@ -1,0 +1,48 @@
+
+/*LOGIN */
+
+.iniciar__sesion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.iniciar__sesion > p{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.iniciar__sesion input{
+    width: 25rem;
+    height: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.iniciar__sesion button {
+    width: 10rem;
+    height: 2.5rem;
+    background-color: rgb(226, 164, 164);
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+
+.form__sesion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn__login{
+    display: none;
+}
+
+
+@media  screen and (max-width: 660px) {
+
+    .iniciar__sesion input{
+        width: 16rem;
+        height: 3rem;
+        margin-bottom: 1.5rem;
+    }
+}

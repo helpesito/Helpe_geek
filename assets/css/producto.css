@@ -1,0 +1,24 @@
+.agregar__productos{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+    color: white;
+}
+
+.agregar__productos input{
+    margin-bottom: 1rem;
+    height: 3rem;
+    position: relative;
+}
+
+.agregar__productos p{
+    margin-bottom: 2rem;
+    font-size: 2.1875rem;
+    color: white;
+}
+
+.agregar__productos label{
+    position: static;
+    margin: 0.2rem;
+}

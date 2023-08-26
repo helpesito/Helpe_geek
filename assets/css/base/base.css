@@ -5,3 +5,199 @@ body, *{
 body{
     background-color: rgb(31, 30, 30);
 }
+
+/* CABECERA */
+
+.cabecera{
+    margin: 1rem 0 2rem 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo_search{
+    display: flex;
+    align-items: center;
+    gap: .9375rem;
+}
+
+.logo__img{
+    width: 10rem;
+}
+
+.busqueda{
+    width: 20rem;
+    height: 2rem;
+}
+
+.btn__login{
+    padding: 10px 50px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    background-color: rgb(226, 164, 164);
+    font-weight: 600;
+    border-radius: .3125rem;
+}
+
+/*footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 6.5rem;
+    background-color: #1b1313;
+    padding: 3rem 0 3rem 0;
+}
+
+.contacto{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contacto__information{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+
+
+.footer__information, a ,li{
+    text-decoration: none;
+    color: white;
+    font-style: none;
+    margin-bottom: 1rem;
+}
+
+.formulario > h2{
+    color: white;
+    font-size: 2rem;
+}
+
+
+.formulario__contacto{
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario__contacto  input{
+    height: 50px;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+.contacto__btn{
+    margin-top: 15px;
+    width: 100px;
+    height: 45px;
+    align-self: center ;
+}
+
+.text__footer{
+    padding: 50px 0 0 20px;
+    text-align: center;
+    color: white;
+}
+
+@media  screen and (max-width: 768px) {
+    .banner__img{
+        height: 15rem;
+    }
+    
+
+    .contacto{
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .contacto__information{
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .logo__img.footer{
+        margin-bottom: 3rem;
+        width: 25rem;
+    }
+
+    .contacto__information{
+        width: 100%;
+    }
+    
+}
+
+@media  screen and (max-width: 650px ) {
+
+    .cabecera{
+        flex-direction: column;
+    }
+
+    .busqueda{
+        width: 18rem;
+    }
+
+    .logo_search{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .text__banner{
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+
+    .logo__img.footer{
+        gap: 1rem;
+        width: 15rem;
+    }
+
+    .productos{
+        margin-top: 1rem;
+    }
+
+    .formulario__contacto > input{
+        width: auto;
+    }
+}
+
+
+@media  screen and (max-width: 360px ) {
+
+    .cabecera{
+        flex-direction: column;
+    }
+
+    .banner__img{
+        height: 7rem;
+    }
+    
+    .text__banner{
+        font-size: 1rem;
+        margin-left: 1rem;
+    }
+
+    .productos{
+        gap: 0;
+        margin-top: 1rem;
+    }
+
+    .logo_search{
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    .logo__img .footer{
+        width: 15rem;
+    }
+
+    .formulario__contacto > input{
+        width: auto;
+    }
+
+    .footer__information{
+        width: 10rem;
+    }
+}
